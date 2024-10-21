@@ -24,16 +24,32 @@
         <div class="input">
           <div class="input-box">
             <i class="fa fa-user" aria-hidden="true"></i>
-            <input type="text" placeholder="Username" />
+            <input type="text" placeholder="Username" class="form-input" />
           </div>
           <div class="input-box">
             <i class="fa fa-key" aria-hidden="true"></i>
-            <input type="text" placeholder="Password" />
+            <input type="password" placeholder="Password" class="form-input" />
+          </div>
+          <div class="role">
+            <!-- <div>
+              <input type="radio" name="role" id="admin" value="admin" />
+              <label for="admin">admin</label>
+            </div>
+            <div>
+              <input type="radio" name="role" id="user" value="user" />
+              <label for="user">user</label>
+            </div> -->
+            <select id="role" name="role">
+              <option value="user" class="item-role">user</option>
+              <option value="admin" class="item-role">admin</option>
+            </select>
           </div>
           <p class="message">لطفا این قسمت ها را خالی نگذارید</p>
         </div>
-        <button class="login-btn">ورود</button>
+        <button type="submit" class="submit">ورود</button>
       </div>
     </main>
+
+    <script src="../JS/auth.js"></script>
   </body>
 </html>
